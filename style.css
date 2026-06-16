@@ -49,7 +49,6 @@ body {
 /* ── PAGE SHELL ── */
 .page {
   width: var(--page-w);
-  height: var(--page-h);
   background: var(--bg);
   margin: 28px auto;
   padding: var(--page-pad);
@@ -73,7 +72,7 @@ body {
   letter-spacing: 0.18em;
   color: var(--text-primary);
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
 }
 .logo-icon {
   width: 22px;
@@ -90,9 +89,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.page-footer .logo {
-  display: none;
-}
+
 .page-num {
   font-size: 11px;
   color: var(--text-muted);
@@ -111,7 +108,7 @@ body {
   line-height: 1;
   letter-spacing: -0.01em;
   color: var(--text-primary);
-  margin-bottom: 4px;
+  margin-bottom: 24px;
 }
 .display-cover {
   font-size: 72px;
@@ -990,6 +987,11 @@ body {
 
 .page-closing {
   min-height: 660px;
+}
+
+.page-milestones {
+  height: auto;
+  min-height: var(--page-h);
 }
 
 @media (max-width: 1320px) {
