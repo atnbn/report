@@ -5,22 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clarity Report</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <main class="report" aria-label="Clarity Monatsreport">
-      <!-- ═══════════════════════════════════════
-     PAGE 1 — COVER
-════════════════════════════════════════ -->
-      <div class="page page-milestones">
+    <main class="report report-index" aria-label="Clarity Report Übersicht">
+      <div class="page page-index">
         <div class="display display-cover">Clarity Report</div>
-        <div class="display-sub">Mai 2026</div>
 
         <div class="cover-kpis">
-          <div class="cover-kpi">
+          <div class="card cover-kpi">
             <div class="kpi-title">
               <svg
                 width="15"
@@ -51,7 +43,7 @@
             <span class="cover-date">MAI</span>
             <span class="cover-year">2026</span>
           </div>
-          <div class="cover-kpi">
+          <div class="card cover-kpi">
             <div class="kpi-title">
               <svg
                 width="15"
@@ -71,7 +63,7 @@
             <div class="big-num">+420 €</div>
             <div class="big-num-label">näher an deinem Ziel</div>
           </div>
-          <div class="cover-kpi">
+          <div class="card cover-kpi">
             <div class="kpi-title">
               <svg
                 width="15"
@@ -117,7 +109,7 @@
             </svg>
             CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">1 / 10</div>
         </div>
       </div>
@@ -128,13 +120,16 @@
       <div class="page">
         <div class="display">Financial Story</div>
 
-        <div class="fin-hero">
+        <div class="card fin-hero">
           <div class="left">
-            <div class="label">Nettovermögen</div>
+            <div class="fin-hero-label">Nettovermögen</div>
             <div class="fin-hero-value">12.800 €</div>
           </div>
+          <div class="fin-hero-divider"></div>
           <div class="right">
-            <div class="icon-circle">↗</div>
+            <div class="round-icon icon-circle">
+              <img class="icon-img" src="./imgs/trending.png" />
+            </div>
             <div>
               <div class="delta">+420 €</div>
               <div class="delta-sub">näher an deinem Ziel</div>
@@ -147,8 +142,8 @@
           <div class="card">
             <div class="card-label">
               <svg
-                width="15"
-                height="15"
+                width="25"
+                height="25"
                 viewBox="0 0 16 16"
                 fill="none"
                 stroke="#888"
@@ -170,19 +165,7 @@
           </div>
           <div class="card">
             <div class="card-label">
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 16 16"
-                fill="none"
-                stroke="#888"
-                stroke-width="1.3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="1,12 5,7 8,9 12,4 15,6" />
-                <polyline points="11,4 15,4 15,8" />
-              </svg>
+              <img src="./imgs/circular-diagram.png" width="30" height="30" />
               Investments
             </div>
             <div class="big-num big-num-compact">8.600 €</div>
@@ -192,8 +175,8 @@
           <div class="card">
             <div class="card-label">
               <svg
-                width="15"
-                height="15"
+                width="25"
+                height="25"
                 viewBox="0 0 16 16"
                 fill="none"
                 stroke="#888"
@@ -213,7 +196,7 @@
             <hr class="divider" />
             <div class="fin-kpi-pct">100 %<br />deiner finanziellen Basis</div>
           </div>
-          <div class="insight-card">
+          <div class="card insight-card">
             <h4>Deine finanzielle Entwicklung im Überblick</h4>
             <p>
               Du baust dein Vermögen kontinuierlich auf und bleibst deinem Ziel
@@ -253,7 +236,7 @@
               /></svg
             >CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">2 / 10</div>
         </div>
       </div>
@@ -265,11 +248,11 @@
         <div class="display">Dein Monat</div>
 
         <div class="monat-grid">
-          <div class="monat-card">
+          <div class="card monat-card">
             <div class="card-label">
               <svg
-                width="15"
-                height="15"
+                width="30"
+                height="30"
                 viewBox="0 0 16 16"
                 fill="none"
                 stroke="#888"
@@ -284,11 +267,11 @@
             </div>
             <div class="monat-val">ETF-Sparrate erhöht</div>
           </div>
-          <div class="monat-card">
+          <div class="card monat-card">
             <div class="card-label">
               <svg
-                width="15"
-                height="15"
+                width="30"
+                height="30"
                 viewBox="0 0 16 16"
                 fill="none"
                 stroke="#888"
@@ -303,13 +286,13 @@
                 <line x1="1.5" y1="10" x2="14.5" y2="10" /></svg
               >Größte Ausgabe
             </div>
-            <div class="monat-val">Urlaub · 480 €</div>
+            <div class="monat-val">Urlaub 480 €</div>
           </div>
-          <div class="monat-card">
+          <div class="card monat-card">
             <div class="card-label">
               <svg
-                width="15"
-                height="15"
+                width="30"
+                height="30"
                 viewBox="0 0 16 16"
                 fill="none"
                 stroke="#888"
@@ -326,11 +309,11 @@
             </div>
             <div class="monat-val">Investments</div>
           </div>
-          <div class="monat-card">
+          <div class="card monat-card">
             <div class="card-label">
               <svg
-                width="15"
-                height="15"
+                width="30"
+                height="30"
                 viewBox="0 0 16 16"
                 fill="none"
                 stroke="#888"
@@ -346,11 +329,11 @@
           </div>
         </div>
 
-        <div class="fazit-card">
-          <div class="label">
+        <div class="card fazit-card">
+          <div class="card-label fazit-label">
             <svg
-              width="15"
-              height="15"
+              width="30"
+              height="30"
               viewBox="0 0 16 16"
               fill="none"
               stroke="#888"
@@ -400,7 +383,7 @@
               /></svg
             >CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">3 / 10</div>
         </div>
       </div>
@@ -412,19 +395,19 @@
         <div class="display">Clarity Score</div>
 
         <div class="score-layout">
-          <div class="score-circle-card">
+          <div class="card score-circle-card">
             <div class="score-circle">
               <div class="score-num">84</div>
               <div class="score-word">Score</div>
             </div>
           </div>
-          <div class="score-dims">
+          <div class="card score-dims">
             <div class="score-dim-row">
               <div class="dim-left">
-                <div class="dim-icon">
+                <div class="round-icon dim-icon">
                   <svg
-                    width="13"
-                    height="13"
+                    width="20"
+                    height="20"
                     viewBox="0 0 16 16"
                     fill="none"
                     stroke="#888"
@@ -444,23 +427,8 @@
             </div>
             <div class="score-dim-row">
               <div class="dim-left">
-                <div class="dim-icon">
-                  <svg
-                    width="13"
-                    height="13"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    stroke="#888"
-                    stroke-width="1.3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <ellipse cx="8" cy="9" rx="5.5" ry="4" />
-                    <path d="M3 7c0-2-1-4 1-5" />
-                    <path d="M13 7c0-2 1-4-1-5" />
-                    <circle cx="6" cy="9" r="0.7" fill="#888" stroke="none" />
-                    <circle cx="10" cy="9" r="0.7" fill="#888" stroke="none" />
-                  </svg>
+                <div class="round-icon dim-icon">
+                  <img src="./imgs/money.png" width="20" height="20" />
                 </div>
                 Sparquote
               </div>
@@ -468,10 +436,10 @@
             </div>
             <div class="score-dim-row">
               <div class="dim-left">
-                <div class="dim-icon">
+                <div class="round-icon dim-icon">
                   <svg
-                    width="13"
-                    height="13"
+                    width="20"
+                    height="20"
                     viewBox="0 0 16 16"
                     fill="none"
                     stroke="#888"
@@ -489,7 +457,7 @@
             </div>
             <div class="score-dim-row">
               <div class="dim-left">
-                <div class="dim-icon">↗</div>
+                <div class="round-icon dim-icon">↗</div>
                 Effizienz
               </div>
               <div class="score-val-green">21/25</div>
@@ -526,7 +494,7 @@
               /></svg
             >CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">4 / 10</div>
         </div>
       </div>
@@ -537,7 +505,7 @@
       <div class="page">
         <div class="display">Wealth Journey</div>
 
-        <div class="chart-card">
+        <div class="card chart-card">
           <div class="chart-label-row">
             <span class="axis-label">Portfoliowert in €</span>
             <span class="chart-val">12.800 €</span>
@@ -622,22 +590,28 @@
         </div>
 
         <div class="journey-kpis">
-          <div class="journey-kpi">
-            <div class="jkpi-icon">▷</div>
+          <div class="card journey-kpi">
+            <div class="round-icon jkpi-icon">
+              <img src="./imgs/play-button.png" width="18" height="18" />
+            </div>
             <div>
               <div class="jkpi-label">Start</div>
               <div class="jkpi-val">10.950 €</div>
             </div>
           </div>
-          <div class="journey-kpi">
-            <div class="jkpi-icon">∿</div>
+          <div class="card journey-kpi">
+            <div class="round-icon jkpi-icon">
+              <img src="./imgs/life-line.png" width="20" height="20" />
+            </div>
             <div>
               <div class="jkpi-label">Aktuell</div>
               <div class="jkpi-val">12.800 €</div>
             </div>
           </div>
-          <div class="journey-kpi">
-            <div class="jkpi-icon">↗</div>
+          <div class="card journey-kpi">
+            <div class="round-icon jkpi-icon">
+              <img src="./imgs/trending.png" width="20" height="20" />
+            </div>
             <div>
               <div class="jkpi-label">Wachstum</div>
               <div class="jkpi-val green">+1.850 €</div>
@@ -669,7 +643,7 @@
               /></svg
             >CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">5 / 10</div>
         </div>
       </div>
@@ -680,7 +654,7 @@
       <div class="page">
         <div class="display">Your Goal</div>
 
-        <div class="goal-card goal-card-fill">
+        <div class="card goal-card goal-card-fill">
           <div>
             <div class="goal-label">Aktuelles Ziel</div>
             <div class="goal-name">Eigenheim Türkei</div>
@@ -695,8 +669,8 @@
             <div class="goal-kpi">
               <div class="gk-label">
                 <svg
-                  width="13"
-                  height="13"
+                  width="22"
+                  height="22"
                   viewBox="0 0 16 16"
                   fill="none"
                   stroke="#888"
@@ -712,25 +686,34 @@
             </div>
             <div class="goal-kpi">
               <div class="gk-label">
-                <span class="gk-icon">↗</span>aktueller Stand
+                <span class="round-icon gk-icon">
+                  <img
+                    src="./imgs/trending.png"
+                    width="16"
+                    height="16"
+                  /> </span
+                >aktueller Stand
               </div>
               <div class="gk-val">12.800 €</div>
             </div>
             <div class="goal-kpi">
               <div class="gk-label">
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  stroke="#888"
-                  stroke-width="1.3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="3" y1="2" x2="3" y2="14" />
-                  <path d="M3 2h9l-2.5 3.5L12.5 9H3" /></svg
-                >noch
+                <span class="round-icon gk-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    stroke="#888"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="3" y1="2" x2="3" y2="14" />
+                    <path d="M3 2h9l-2.5 3.5L12.5 9H3" /></svg
+                ></span>
+
+                noch
               </div>
               <div class="gk-val">40.200 €</div>
             </div>
@@ -761,7 +744,7 @@
               /></svg
             >CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">6 / 10</div>
         </div>
       </div>
@@ -772,7 +755,7 @@
       <div class="page">
         <div class="display">Money Map</div>
 
-        <div class="money-map-card">
+        <div class="card money-map-card">
           <div class="bar-list">
             <div class="bar-row">
               <span class="bar-name">Restaurants</span>
@@ -813,8 +796,8 @@
         </div>
 
         <div class="insights-grid">
-          <div class="insight-tile">
-            <div class="it-icon">
+          <div class="card insight-tile">
+            <div class="round-icon it-icon">
               <svg
                 width="14"
                 height="14"
@@ -834,8 +817,8 @@
             </div>
             <p>Restaurants waren die größte Konsumausgabe im Mai.</p>
           </div>
-          <div class="insight-tile">
-            <div class="it-icon">
+          <div class="card insight-tile">
+            <div class="round-icon it-icon">
               <svg
                 width="14"
                 height="14"
@@ -855,8 +838,8 @@
               freien Budget aus.
             </p>
           </div>
-          <div class="insight-tile">
-            <div class="it-icon">
+          <div class="card insight-tile">
+            <div class="round-icon it-icon">
               <svg
                 width="14"
                 height="14"
@@ -901,7 +884,7 @@
               /></svg
             >CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">7 / 10</div>
         </div>
       </div>
@@ -912,7 +895,7 @@
       <div class="page">
         <div class="display">Meilensteine</div>
 
-        <div class="milestone-card">
+        <div class="card milestone-card">
           <div class="milestone-header">
             <h3>Vermögens-Meilenstein</h3>
             <p>Dein Fortschritt zum nächsten Ziel</p>
@@ -942,7 +925,7 @@
           </div>
         </div>
 
-        <div class="badges-card">
+        <div class="card badges-card">
           <div class="badges-header">
             <h3>Deine Entwicklung</h3>
             <span class="pts">Noch 126 Punkte bis zum nächsten Level</span>
@@ -1039,7 +1022,7 @@
               /></svg
             >CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">8 / 10</div>
         </div>
       </div>
@@ -1051,9 +1034,9 @@
         <div class="display">Clarity Recap</div>
 
         <div class="recap-grid">
-          <div class="recap-card">
-            <div class="rc-label">
-              <div class="rc-icon">✓</div>
+          <div class="card recap-card">
+            <div class="card-label rc-label">
+              <div class="round-icon rc-icon">✓</div>
               Was gut lief
             </div>
             <ul>
@@ -1072,9 +1055,9 @@
               </li>
             </ul>
           </div>
-          <div class="recap-card">
-            <div class="rc-label">
-              <div class="rc-icon">!</div>
+          <div class="card recap-card">
+            <div class="card-label rc-label">
+              <div class="round-icon rc-icon">!</div>
               Was Aufmerksamkeit braucht
             </div>
             <ul>
@@ -1094,23 +1077,29 @@
               </li>
             </ul>
           </div>
-          <div class="recap-card">
-            <div class="rc-label">
-              <div class="rc-icon">↗</div>
+          <div class="card recap-card">
+            <div class="card-label rc-label">
+              <div class="round-icon rc-icon">↗</div>
               Nächster Hebel
             </div>
             <ul>
               <li>
-                <div class="li-dot arrow">›</div>
+                <div class="li-dot arrow">
+                  <img src="./imgs/chevron.png" alt="Arrow" />
+                </div>
                 100 € zusätzlich ins Investment würden den Fortschritt spürbar
                 beschleunigen.
               </li>
               <li>
-                <div class="li-dot arrow">›</div>
+                <div class="li-dot arrow">
+                  <img src="./imgs/chevron.png" alt="Arrow" />
+                </div>
                 Automatisiere deine Spar- und Investitionsraten weiter.
               </li>
               <li>
-                <div class="li-dot arrow">›</div>
+                <div class="li-dot arrow">
+                  <img src="./imgs/chevron.png" alt="Arrow" />
+                </div>
                 Überprüfe monatlich: Was hat mich wirklich weitergebracht?
               </li>
             </ul>
@@ -1141,7 +1130,7 @@
               /></svg
             >CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">9 / 10</div>
         </div>
       </div>
@@ -1202,7 +1191,7 @@
               /></svg
             >CLARITY
           </div>
-          <div class="footer-title">Clarity Report</div>
+          <div class="footer-title"></div>
           <div class="page-num">10 / 10</div>
         </div>
       </div>
